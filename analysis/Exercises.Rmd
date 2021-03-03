@@ -49,7 +49,7 @@ glance(m1)
 glance(m1_reg)
 
 ```
-The slope decreases from 0.504 to 0.364. Region is therefore a confounder for economy.
+The slope decreases from 0.504 to 0.364, but  $R^2$ increases from 0.425 to 0.744. Region is therefore a confounder for economy.
 
 
 6\. Finally fit a model with `ef_money` and `pf_expression_control` as exposures and `hf_score` as outcome.  Compare the slope and $R^2$ from the models from Q1. Could `ef_money` be a confounder? 
@@ -61,7 +61,7 @@ tidy(m2)
 glance(m2)
 
 ```
-The slope stays quite similar, but $R^2$ increases. That means that `ef_money` is not a confounder.
+The slope stays quite similar (0.37 without and 0.32 with ef_money), but $R^2$ increases (from 0.62 to 0.774). That means that `ef_money` is not a confounder.
 
 
 
