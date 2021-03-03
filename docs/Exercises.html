@@ -473,16 +473,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomlisanechyporenkoAssignmenttreed08027acec2ec5da1d3b2ae40abc4667d431876ctargetblankd08027aa"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/lisanechyporenko/Assignment/tree/d08027acec2ec5da1d3b2ae40abc4667d431876c" target="_blank">d08027a</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomlisanechyporenkoAssignmenttree28a2f9076447d98b5b211d2c445622638357bd16targetblank28a2f90a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/lisanechyporenko/Assignment/tree/28a2f9076447d98b5b211d2c445622638357bd16" target="_blank">28a2f90</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomlisanechyporenkoAssignmenttreed08027acec2ec5da1d3b2ae40abc4667d431876ctargetblankd08027aa" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomlisanechyporenkoAssignmenttree28a2f9076447d98b5b211d2c445622638357bd16targetblank28a2f90a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/lisanechyporenko/Assignment/tree/d08027acec2ec5da1d3b2ae40abc4667d431876c" target="_blank">d08027a</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/lisanechyporenko/Assignment/tree/28a2f9076447d98b5b211d2c445622638357bd16" target="_blank">28a2f90</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -528,6 +528,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/lisanechyporenko/Assignment/blob/28a2f9076447d98b5b211d2c445622638357bd16/analysis/Exercises.Rmd" target="_blank">28a2f90</a>
+</td>
+<td>
+lisanechyporenko
+</td>
+<td>
+2021-03-03
+</td>
+<td>
+wflow_publish(“analysis/Exercises.Rmd”)
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/lisanechyporenko/Assignment/df2863d27294360e1b524f21b06952e6380ec9c3/docs/Exercises.html" target="_blank">df2863d</a>
+</td>
+<td>
+lisanechyporenko
+</td>
+<td>
+2021-03-03
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -705,7 +739,7 @@ tidy(m2)</code></pre>
       &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
 1     0.774         0.771 0.516      272. 4.38e-52     2  -121.  251.  263.
 # ... with 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;</code></pre>
-<p>The slope stays quite similar (0.37 without and 0.32 with ef_money), but <span class="math inline">\(R^2\)</span> increases (from 0.62 to 0.774). That means that <code>ef_money</code> is not a confounder.</p>
+<p>The slope stays quite similar (0.37 without and 0.32 with ef_money), but <span class="math inline">\(R^2\)</span> increases (from 0.62 to 0.774). That means that <code>ef_money</code> is might be a confounder.</p>
 <p>7. Use a linear regression model (and scatter plot) with <code>ef_money</code> as exposure and <code>pf_expression_control</code> as outcome, to study whether <code>ef_money</code> has an association with <code>pf_expression_control</code> as well. This might validate our finding that <code>ef_money</code> is a confounder between <code>pf_expression_control</code> as exposure and <code>hf_score</code> as outcome from Q6.</p>
 <pre class="r"><code>p &lt;- hfi_2016 %&gt;% ggplot(aes(ef_money,pf_expression_control)) 
 p + geom_point() + geom_smooth(method = &quot;lm&quot;, se = FALSE)</code></pre>
@@ -725,6 +759,7 @@ tidy(m3)</code></pre>
       &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
 1     0.143         0.137  2.16      26.6 0.000000722     1  -354.  713.  722.
 # ... with 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;</code></pre>
+<p>Based on the low <span class="math inline">\(R^2\)</span> of 0.143 it is now clear that <code>ef_money</code> and <code>pf_expression_control</code> are ot associated, therefore it is not a confounder.</p>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
