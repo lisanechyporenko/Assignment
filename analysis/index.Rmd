@@ -8,4 +8,6 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+This is the assignment for the R course.
+
+You can find the solved exercises: [Here!](Exercises.html)
