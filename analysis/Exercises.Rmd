@@ -40,7 +40,7 @@ The slope indicates that that human freedom is highly associated with a better e
 
 5\. Again add region to the model from Q4. Compare the slope and $R^2$ with the model from Q4.
 
-```{r }
+```{r message=FALSE, warning=FALSE}
 
 m1_reg <- lm(hf_score ~ ef_money + region, data = hfi_2016)
 tidy(m1_reg)
