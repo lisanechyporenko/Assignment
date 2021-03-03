@@ -83,3 +83,6 @@ glance(m3)
 
 Based on the low $R^2$ of 0.143 it is now clear that `ef_money` and `pf_expression_control` are ot associated, therefore it is not a confounder.
 
+```{r, echo = FALSE, out.width = "70%", eval=TRUE}
+knitr::include_graphics("https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/code_hero.jpg?raw=true", dpi = 100)
+```
