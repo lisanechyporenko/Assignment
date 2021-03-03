@@ -61,7 +61,7 @@ tidy(m2)
 glance(m2)
 
 ```
-The slope stays quite similar (0.37 without and 0.32 with ef_money), but $R^2$ increases (from 0.62 to 0.774). That means that `ef_money` is not a confounder.
+The slope stays quite similar (0.37 without and 0.32 with ef_money), but $R^2$ increases (from 0.62 to 0.774). That means that `ef_money` is might be a confounder.
 
 
 
@@ -81,4 +81,5 @@ glance(m3)
 
 ```
 
+Based on the low $R^2$ of 0.143 it is now clear that `ef_money` and `pf_expression_control` are ot associated, therefore it is not a confounder.
 
